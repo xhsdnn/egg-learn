@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "egg-bin dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "egg-bin test"
   },
   "author": "daiqiang@agree.com.cn",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "egg-view-nunjucks": "^2.2.0"
   },
   "devDependencies": {
-    "egg-bin": "^4.7.0"
+    "egg-bin": "^4.7.0",
+    "egg-mock": "^3.17.2"
   }
 }
