@@ -99,13 +99,6 @@
       "fileExtensions": [],
       "whitelist": null
     },
-    "development": {
-      "watchDirs": [],
-      "ignoreDirs": [],
-      "fastReady": false,
-      "reloadOnDebug": true,
-      "overrideDefault": false
-    },
     "customLogger": {
       "scheduleLogger": {
         "consoleLevel": "NONE",
@@ -131,7 +124,7 @@
     },
     "view": {
       "root": "/Users/daiqiang/code/node/egg-learn/egg-manual/app/view",
-      "cache": false,
+      "cache": true,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
       "mapping": {
@@ -143,7 +136,7 @@
       "throwOnUndefined": false,
       "trimBlocks": false,
       "lstripBlocks": false,
-      "cache": false
+      "cache": true
     },
     "mysql": {
       "default": {
@@ -153,7 +146,7 @@
       "app": true,
       "agent": false
     },
-    "env": "local",
+    "env": "unittest",
     "name": "egg-manual",
     "keys": "<String len: 9>",
     "proxy": false,
@@ -215,19 +208,17 @@
     "logger": {
       "dir": "/Users/daiqiang/code/node/egg-learn/egg-manual/logs/egg-manual",
       "encoding": "utf8",
-      "env": "local",
+      "env": "unittest",
       "level": "INFO",
-      "consoleLevel": "INFO",
+      "consoleLevel": "WARN",
       "disableConsoleAfterReady": false,
       "outputJSON": false,
-      "buffer": true,
+      "buffer": false,
       "appLogName": "egg-manual-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {
-        "consoleLevel": "WARN"
-      },
+      "coreLogger": {},
       "allowDebugAtProd": false,
       "type": "agent"
     },
@@ -373,21 +364,6 @@
       "path": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-multipart",
       "version": "2.0.0"
     },
-    "development": {
-      "enable": true,
-      "package": "egg-development",
-      "name": "development",
-      "dependencies": [
-        "watcher"
-      ],
-      "optionalDependencies": [],
-      "env": [
-        "local"
-      ],
-      "from": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/plugin.js",
-      "path": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-development",
-      "version": "2.3.1"
-    },
     "schedule": {
       "enable": true,
       "package": "egg-schedule",
@@ -448,10 +424,10 @@
       "path": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view-nunjucks",
       "version": "2.2.0"
     },
-    "int": {
+    "tranInt": {
       "enable": true,
       "path": "/Users/daiqiang/code/node/egg-learn/egg-manual/lib/plugin/transform-int",
-      "name": "int",
+      "name": "tranInt",
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
@@ -467,6 +443,15 @@
       "from": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/plugin.js",
       "path": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-mysql",
       "version": "3.0.0"
+    },
+    "egg-mock": {
+      "enable": true,
+      "path": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-mock",
+      "name": "egg-mock",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "version": "3.17.2"
     }
   }
 }
