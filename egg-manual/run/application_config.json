@@ -16,15 +16,14 @@
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
-        "enable": true,
+        "enable": false,
         "useSession": false,
         "ignoreJSON": false,
         "cookieName": "csrfToken",
         "sessionName": "csrfToken",
         "headerName": "x-csrf-token",
         "bodyName": "_csrf",
-        "queryName": "_csrf",
-        "matching": "<Function anonymous>"
+        "queryName": "_csrf"
       },
       "xframe": {
         "enable": true,
@@ -102,6 +101,8 @@
         "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-static/config/locales",
         "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view/config/locales",
         "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view-nunjucks/config/locales",
+        "/Users/daiqiang/code/node/egg-learn/egg-manual/lib/plugin/transform-int/config/locales",
+        "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-mysql/config/locales",
         "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/locales",
         "/Users/daiqiang/code/node/egg-learn/egg-manual/config/locales"
       ],
@@ -177,6 +178,14 @@
       "lstripBlocks": false,
       "cache": false
     },
+    "mysql": {
+      "default": {
+        "database": null,
+        "connectionLimit": 5
+      },
+      "app": true,
+      "agent": false
+    },
     "env": "local",
     "name": "egg-manual",
     "keys": "<String len: 9>",
@@ -191,16 +200,18 @@
       "main": "index.js",
       "scripts": {
         "dev": "egg-bin dev",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "egg-bin test"
       },
       "author": "daiqiang@agree.com.cn",
       "license": "ISC",
       "dependencies": {
         "egg": "^2.9.1",
+        "egg-mysql": "^3.0.0",
         "egg-view-nunjucks": "^2.2.0"
       },
       "devDependencies": {
-        "egg-bin": "^4.7.0"
+        "egg-bin": "^4.7.0",
+        "egg-mock": "^3.17.2"
       }
     },
     "baseDir": "/Users/daiqiang/code/node/egg-learn/egg-manual",
@@ -307,12 +318,10 @@
       "serverUrl": "https://hacker-news.firebaseio.com/v0"
     },
     "middleware": [
-      "robot"
+      "formatParam"
     ],
-    "robot": {
-      "ua": [
-        {}
-      ]
+    "formatParam": {
+      "msg": "extra message"
     },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
@@ -488,6 +497,26 @@
       "from": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/plugin.js",
       "path": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view-nunjucks",
       "version": "2.2.0"
+    },
+    "tranInt": {
+      "enable": true,
+      "path": "/Users/daiqiang/code/node/egg-learn/egg-manual/lib/plugin/transform-int",
+      "name": "tranInt",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/plugin.js"
+    },
+    "mysql": {
+      "enable": true,
+      "package": "egg-mysql",
+      "name": "mysql",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/plugin.js",
+      "path": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-mysql",
+      "version": "3.0.0"
     }
   }
 }

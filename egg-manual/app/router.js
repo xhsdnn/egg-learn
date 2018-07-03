@@ -1,5 +1,5 @@
 module.exports = app => {
     const { router, controller } = app;
-    router.get("/", controller.main.index);
-    router.get('/news', controller.news.list);
+    // 根路由，RESTful风格url
+    router.resources("main", "/api/main", controller.main);
 }

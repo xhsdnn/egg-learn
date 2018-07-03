@@ -1,0 +1,128 @@
+2018-07-03 10:37:44,623 WARN 70777 [-/127.0.0.1/-/1ms POST /api/main] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2018-07-03 10:37:44,624 WARN 70777 [-/127.0.0.1/-/2ms POST /api/main] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa/lib/context.js:93:11)
+    at Object.assertCsrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/app/extend/context.js:149:17)
+    at csrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+message: 'invalid csrf token'
+pid: 70777
+hostname: daiqiangdeMacBook-Pro.local
+
+2018-07-03 10:38:18,597 WARN 70777 [-/127.0.0.1/-/2ms PUT /api/main/123] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2018-07-03 10:38:18,598 WARN 70777 [-/127.0.0.1/-/3ms PUT /api/main/123] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa/lib/context.js:93:11)
+    at Object.assertCsrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/app/extend/context.js:149:17)
+    at csrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+message: 'invalid csrf token'
+pid: 70777
+hostname: daiqiangdeMacBook-Pro.local
+
+2018-07-03 10:40:12,387 WARN 70777 [-/127.0.0.1/-/1ms POST /api/main] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2018-07-03 10:40:12,387 WARN 70777 [-/127.0.0.1/-/1ms POST /api/main] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa/lib/context.js:93:11)
+    at Object.assertCsrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/app/extend/context.js:149:17)
+    at csrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+message: 'invalid csrf token'
+pid: 70777
+hostname: daiqiangdeMacBook-Pro.local
+
+2018-07-03 10:41:10,320 WARN 70818 [-/127.0.0.1/-/5ms POST /api/main] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2018-07-03 10:41:10,322 WARN 70818 [-/127.0.0.1/-/7ms POST /api/main] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa/lib/context.js:93:11)
+    at Object.assertCsrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/app/extend/context.js:149:17)
+    at csrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+message: 'invalid csrf token'
+pid: 70818
+hostname: daiqiangdeMacBook-Pro.local
+
+2018-07-03 10:41:17,630 WARN 70824 [-/127.0.0.1/-/5ms POST /api/main] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2018-07-03 10:41:17,632 WARN 70824 [-/127.0.0.1/-/6ms POST /api/main] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa/lib/context.js:93:11)
+    at Object.assertCsrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/app/extend/context.js:149:17)
+    at csrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+message: 'invalid csrf token'
+pid: 70824
+hostname: daiqiangdeMacBook-Pro.local
+
+2018-07-03 10:42:15,550 WARN 70837 [-/127.0.0.1/-/5ms POST /api/main] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2018-07-03 10:42:15,552 WARN 70837 [-/127.0.0.1/-/6ms POST /api/main] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa/lib/context.js:93:11)
+    at Object.assertCsrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/app/extend/context.js:149:17)
+    at csrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+message: 'invalid csrf token'
+pid: 70837
+hostname: daiqiangdeMacBook-Pro.local
+
+2018-07-03 10:42:16,539 WARN 70837 [-/127.0.0.1/-/1ms POST /api/main] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2018-07-03 10:42:16,539 WARN 70837 [-/127.0.0.1/-/1ms POST /api/main] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa/lib/context.js:93:11)
+    at Object.assertCsrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/app/extend/context.js:149:17)
+    at csrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+message: 'invalid csrf token'
+pid: 70837
+hostname: daiqiangdeMacBook-Pro.local
+
+2018-07-03 10:47:24,264 WARN 70894 [-/127.0.0.1/-/4ms POST /api/main] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2018-07-03 10:47:24,266 WARN 70894 [-/127.0.0.1/-/5ms POST /api/main] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa/lib/context.js:93:11)
+    at Object.assertCsrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/app/extend/context.js:149:17)
+    at csrf (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/koa-compose/index.js:42:32)
+message: 'invalid csrf token'
+pid: 70894
+hostname: daiqiangdeMacBook-Pro.local
+

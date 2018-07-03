@@ -9,18 +9,17 @@
     "cache": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view/config/config.local.js",
     "defaultExtension": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view/config/config.default.js"
   },
-  "session": {
-    "maxAge": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-session/config/config.default.js",
-    "key": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-session/config/config.default.js",
-    "httpOnly": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-session/config/config.default.js",
-    "encrypt": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-session/config/config.default.js"
+  "news": {
+    "pageSize": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js",
+    "serverUrl": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js"
+  },
+  "middleware": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js",
+  "formatParam": {
+    "msg": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js"
   },
   "security": {
-    "domainWhiteList": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
-    "protocolWhiteList": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
-    "defaultMiddleware": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
     "csrf": {
-      "enable": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
+      "enable": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js",
       "useSession": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
       "ignoreJSON": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
       "cookieName": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
@@ -29,6 +28,9 @@
       "bodyName": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
       "queryName": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js"
     },
+    "domainWhiteList": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
     "xframe": {
       "enable": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
       "value": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js"
@@ -66,6 +68,12 @@
       "ipBlackList": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
       "checkAddress": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js"
     }
+  },
+  "session": {
+    "maxAge": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-session/config/config.default.js"
   },
   "helper": {
     "shtml": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js"
@@ -142,6 +150,14 @@
     "lstripBlocks": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view-nunjucks/config/config.default.js",
     "cache": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view-nunjucks/config/config.local.js"
   },
+  "mysql": {
+    "default": {
+      "database": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-mysql/config/config.default.js",
+      "connectionLimit": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-mysql/config/config.default.js"
+    },
+    "app": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-mysql/config/config.default.js",
+    "agent": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-mysql/config/config.default.js"
+  },
   "env": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
   "name": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
   "proxy": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
@@ -161,10 +177,12 @@
     "license": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
     "dependencies": {
       "egg": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
+      "egg-mysql": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
       "egg-view-nunjucks": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
-      "egg-bin": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js"
+      "egg-bin": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js"
     }
   },
   "baseDir": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",

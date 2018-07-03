@@ -11,7 +11,7 @@
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
-        "enable": true,
+        "enable": false,
         "useSession": false,
         "ignoreJSON": false,
         "cookieName": "csrfToken",
@@ -135,7 +135,7 @@
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
       "mapping": {
-        ".tpl": "numjucks"
+        ".tpl": "nunjucks"
       }
     },
     "nunjucks": {
@@ -144,6 +144,14 @@
       "trimBlocks": false,
       "lstripBlocks": false,
       "cache": false
+    },
+    "mysql": {
+      "default": {
+        "database": null,
+        "connectionLimit": 5
+      },
+      "app": true,
+      "agent": false
     },
     "env": "local",
     "name": "egg-manual",
@@ -159,16 +167,18 @@
       "main": "index.js",
       "scripts": {
         "dev": "egg-bin dev",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "egg-bin test"
       },
       "author": "daiqiang@agree.com.cn",
       "license": "ISC",
       "dependencies": {
         "egg": "^2.9.1",
+        "egg-mysql": "^3.0.0",
         "egg-view-nunjucks": "^2.2.0"
       },
       "devDependencies": {
-        "egg-bin": "^4.7.0"
+        "egg-bin": "^4.7.0",
+        "egg-mock": "^3.17.2"
       }
     },
     "baseDir": "/Users/daiqiang/code/node/egg-learn/egg-manual",
@@ -265,9 +275,19 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
+    "news": {
+      "pageSize": 5,
+      "serverUrl": "https://hacker-news.firebaseio.com/v0"
+    },
+    "middleware": [
+      "formatParam"
+    ],
+    "formatParam": {
+      "msg": "extra message"
+    },
     "coreMiddlewares": "~config~coreMiddleware",
-    "appMiddlewares": [],
-    "appMiddleware": "~config~appMiddlewares"
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware"
   },
   "plugins": {
     "session": {
@@ -427,6 +447,26 @@
       "from": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/plugin.js",
       "path": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view-nunjucks",
       "version": "2.2.0"
+    },
+    "int": {
+      "enable": true,
+      "path": "/Users/daiqiang/code/node/egg-learn/egg-manual/lib/plugin/transform-int",
+      "name": "int",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/plugin.js"
+    },
+    "mysql": {
+      "enable": true,
+      "package": "egg-mysql",
+      "name": "mysql",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/plugin.js",
+      "path": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-mysql",
+      "version": "3.0.0"
     }
   }
 }

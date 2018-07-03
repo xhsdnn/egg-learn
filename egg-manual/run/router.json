@@ -1,26 +1,133 @@
 [
   {
-    "name": null,
+    "name": "mains",
     "methods": [
       "HEAD",
       "GET"
     ],
     "paramNames": [],
-    "path": "/",
-    "regexp": "/^(?:\\/(?=$))?$/",
+    "path": "/api/main",
+    "regexp": "/^\\/api\\/main(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
   },
   {
-    "name": null,
+    "name": "new_main",
     "methods": [
       "HEAD",
       "GET"
     ],
     "paramNames": [],
-    "path": "/news",
-    "regexp": "/^\\/news(?:\\/(?=$))?$/",
+    "path": "/api/main/new",
+    "regexp": "/^\\/api\\/main\\/new(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "mains",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/main",
+    "regexp": "/^\\/api\\/main(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "main",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/main/:id",
+    "regexp": "/^\\/api\\/main\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "edit_main",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/main/:id/edit",
+    "regexp": "/^\\/api\\/main\\/((?:[^\\/]+?))\\/edit(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "main",
+    "methods": [
+      "PATCH",
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/main/:id",
+    "regexp": "/^\\/api\\/main\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "destroy_main",
+    "methods": [
+      "DELETE"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/main/:id",
+    "regexp": "/^\\/api\\/main\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
