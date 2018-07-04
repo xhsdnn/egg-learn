@@ -6,7 +6,7 @@
       ".tpl": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js"
     },
     "root": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view/config/config.default.js",
-    "cache": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view/config/config.local.js",
     "defaultExtension": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view/config/config.default.js"
   },
   "news": {
@@ -36,7 +36,7 @@
       "value": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
+      "enable": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.local.js",
       "maxAge": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js",
       "includeSubdomains": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-security/config/config.default.js"
     },
@@ -96,7 +96,7 @@
     "cookieMaxAge": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-watcher/config/config.unittest.js",
+    "type": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-watcher/config/config.local.js",
     "eventSources": {
       "default": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-watcher/config/config.default.js",
       "development": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-watcher/config/config.default.js"
@@ -112,6 +112,13 @@
     "files": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-multipart/config/config.default.js",
     "fileExtensions": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-multipart/config/config.default.js",
     "whitelist": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-multipart/config/config.default.js"
+  },
+  "development": {
+    "watchDirs": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-development/config/config.default.js"
   },
   "customLogger": {
     "scheduleLogger": {
@@ -141,7 +148,7 @@
     "throwOnUndefined": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view-nunjucks/config/config.default.js",
     "trimBlocks": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view-nunjucks/config/config.default.js",
     "lstripBlocks": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view-nunjucks/config/config.default.js",
-    "cache": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view-nunjucks/config/config.default.js"
+    "cache": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-view-nunjucks/config/config.local.js"
   },
   "mysql": {
     "default": {
@@ -214,15 +221,17 @@
     "encoding": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
     "env": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
     "level": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
-    "consoleLevel": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.unittest.js",
+    "consoleLevel": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
     "disableConsoleAfterReady": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
     "outputJSON": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
-    "buffer": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.unittest.js",
+    "buffer": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
     "appLogName": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
     "coreLogName": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
     "agentLogName": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
     "errorLogName": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
-    "coreLogger": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.local.js"
+    },
     "allowDebugAtProd": "/Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg/config/config.default.js"
   },
   "httpclient": {

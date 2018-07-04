@@ -1,2 +1,4 @@
-2018-07-03 17:45:35,040 INFO 74169 [Timer] /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-07-04 00:00:00.000
-2018-07-03 17:45:35,041 INFO 74169 [Timer] /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-07-04 00:00:01.000
+2018-07-04 10:04:24,873 INFO 74895 [Timer] /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-07-05 00:00:00.000
+2018-07-04 10:04:24,873 INFO 74895 [Timer] /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-07-05 00:00:01.000
+2018-07-04 10:11:20,488 INFO 74958 [Timer] /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-07-05 00:00:00.000
+2018-07-04 10:11:20,489 INFO 74958 [Timer] /Users/daiqiang/code/node/egg-learn/egg-manual/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-07-05 00:00:01.000

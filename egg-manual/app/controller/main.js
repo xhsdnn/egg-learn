@@ -5,9 +5,9 @@ class MainController extends Controller {
     async index() {
         // 使用插件
         let tranIntRes = this.app.tranInt("113r111r");
-        
+
         const ctx = this.ctx;
-        let info = await ctx.service.main.getInfo();
+        let info = await ctx.service.main.getInfo();     
         ctx.helper.success(ctx, info);
     }
 

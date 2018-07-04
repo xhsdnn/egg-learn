@@ -3,5 +3,7 @@ module.exports = (options, app) => {
         ctx.request.method === "GET" ? ctx.query.extra = options.msg : ctx.request.body.extra = options.msg;
 
         await next();
+
+        // ctx.body.abc="213";
     }
 };
