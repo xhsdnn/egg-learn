@@ -18,10 +18,19 @@ class MainController extends Controller {
 
     // GTE /api/main/:id?a=111
     async show() {
-        let params = this.ctx.params; // 路由参数，即{id:"123"}
-        let query = this.ctx.query; // 请求体，即url中?后面的参数，{a:"111"}，如果是GET请求可以省略request，POST请求获取请求体只能使用this.ctx.request.body
+        let { id } = this.ctx.params; // 路由参数，即{id:"123"}
+        let { name } = this.ctx.query; // 请求体，即url中?后面的参数，{a:"111"}，如果是GET请求可以省略request，POST请求获取请求体只能使用this.ctx.request.body
+        let options = {
+            id: id,
+            name: name
+        }
+        let info = await this.ctx.service.main.getInfo(options);
 
-        this.ctx.helper.success(this.ctx, "show");
+        this.ctx.body = {
+            code: 0,
+            data: info
+        };
+        this.ctx.status = 200;
     }
 
     // GTE /api/main/:id/edit

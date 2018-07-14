@@ -1,8 +1,10 @@
 const Service = require('egg').Service;
 
 class MainService extends Service {
-  async getInfo() {
-    return "123";
+  async getInfo(options) {
+    options.height = 180;
+    options.age = 20;
+    return options;
   }
 }
 

@@ -14,8 +14,11 @@ exports.news = {
 };
 
 // 添加 middleware
-exports.middleware = ['formatParam'];
+exports.middleware = ['formatParam', 'middlewareOne', 'middlewareTwo'];
 exports.formatParam = { // 中间件参数，即options
+    msg: "extra message"
+}
+exports.middlewareOne = { // 中间件参数（即options）
     msg: "extra message"
 }
 

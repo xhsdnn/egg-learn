@@ -1,5 +1,6 @@
 module.exports = app => {
     const { router, controller } = app;
-    // 根路由，RESTful风格url
+
+    // RESTful风格
     router.resources("main", "/api/main", controller.main);
 }

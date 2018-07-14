@@ -17,6 +17,9 @@
   "formatParam": {
     "msg": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js"
   },
+  "middlewareOne": {
+    "msg": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js"
+  },
   "security": {
     "csrf": {
       "enable": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js",

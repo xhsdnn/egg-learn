@@ -14,9 +14,6 @@
     "serverUrl": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js"
   },
   "middleware": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js",
-  "formatParam": {
-    "msg": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js"
-  },
   "security": {
     "csrf": {
       "enable": "/Users/daiqiang/code/node/egg-learn/egg-manual/config/config.default.js",

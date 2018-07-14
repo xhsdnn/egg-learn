@@ -280,11 +280,9 @@
       "serverUrl": "https://hacker-news.firebaseio.com/v0"
     },
     "middleware": [
-      "formatParam"
+      "middlewareOne",
+      "middlewareTwo"
     ],
-    "formatParam": {
-      "msg": "extra message"
-    },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
     "appMiddleware": "~config~middleware"
