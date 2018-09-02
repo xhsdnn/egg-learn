@@ -7,7 +7,7 @@ class MainController extends Controller {
         let tranIntRes = this.app.tranInt("113r111r");
 
         const ctx = this.ctx;
-        let info = await ctx.service.main.getInfo();     
+        let info = await ctx.service.main.getInfoById();     
         ctx.helper.success(ctx, info);
     }
 
@@ -16,10 +16,10 @@ class MainController extends Controller {
         this.ctx.helper.success(this.ctx, "new");
     }
 
-    // GTE /api/main/:id?a=111
+    // GTE /api/main/:id?name=xxx
     async show() {
-        let { id } = this.ctx.params; // 路由参数，即{id:"123"}
-        let { name } = this.ctx.query; // 请求体，即url中?后面的参数，{a:"111"}，如果是GET请求可以省略request，POST请求获取请求体只能使用this.ctx.request.body
+        let { id } = this.ctx.params; // 路由参数，即{id:1}
+        let { name } = this.ctx.query; // 请求体，即url中?后面的参数，{name:"dq"}，如果是GET请求可以省略request，POST请求获取请求体只能使用this.ctx.request.body
         let options = {
             id: id,
             name: name
