@@ -65,3 +65,22 @@ exports.sequelize = {
     // 数据库名
     database: "dqdev"
 };
+
+/**
+ * 安全配置
+ */
+exports.security = {
+    csrf: { enable: false },
+    domainWhiteList: [
+        "127.0.0.1:8082",
+        "localhost:8082"
+    ]
+};
+
+/**
+ * 跨域配置
+ */
+exports.cors = {
+    origin: "*",
+    allowMethods: "GET,HEAD,PUT,POST,DELETE,PATCH"
+};
